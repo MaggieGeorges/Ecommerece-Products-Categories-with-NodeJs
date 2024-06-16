@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to OmniStore</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        .container {
+            width: 100%;
+            max-width: 600px;
+            margin: auto;
+            background-color: #ffffff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        .header p {
+            font-size: 45px;
+            font-weight: bold;
+        }
+        .content {
+            padding: 20px;
+        }
+        .content img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .content p {
+            color: #333333;
+            font-size: 18px;
+            margin: 10px 0;
+        }
+        .content h2 {
+            font-size: 35px;
+            color: #333333;
+            margin-bottom: 20px;
+        }
+        .content .welcome-text {
+            font-size: 30px;
+            color: #666666;
+            margin: 10px 0;
+        }
+        .content .details {
+            font-size: 20px;
+            color: #666666;
+            margin: 10px 0;
+        }
+        .footer {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        .footer a {
+            color: #ffffff;
+            text-decoration: none;
+            background-color: crimson;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <p>OmniStore</p>
+        </div>
+        <div class="content">
+            <img src="https://graphicsfamily.com/wp-content/uploads/edd/2020/12/Online-Shop-logo-Design.jpg" alt="image"/>
+            <p>Hello <%=name%>,</p>
+            <h2>Welcome to OmniStore</h2>
+            <p class="welcome-text">Your one-stop shop for everything you need!</p>
+            <p class="details">
+                At OmniStore, we offer a wide range of products to meet all your shopping needs. From the latest gadgets and fashion to everyday essentials, we have it all. Enjoy seamless shopping experience and great deals every day. Happy shopping!
+            </p>
+        </div>
+        <div class="footer">
+            <a href="#">Shop Now</a>
+        </div>
+    </div>
+</body>
+</html>

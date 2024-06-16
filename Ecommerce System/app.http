@@ -1,0 +1,77 @@
+#Categories Api
+#To get all categories
+
+GET http://localhost:3000/category
+
+####
+POST http://localhost:3000/category
+Content-Type: application/json
+
+{
+    "Name": "Clothing"
+}
+
+#####
+#To get category with ID
+GET http://localhost:3000/category/:c450e18c-e802-47b0-993a-ef1dd99b1c64/products
+
+
+####
+#Users API
+POST  http://localhost:3000/auth/register
+Content-Type: application/json
+
+{   
+    "Name":"Virginia Muthoni",
+    "Email":"virginia254@gmail.com",
+    "Password":"Virginia@254!"
+}
+
+#####
+POST  http://localhost:3000/auth/login
+
+Content-Type: application/json
+
+{
+    "Email":"maggiegeorges254@gmail.com",
+    "Password":"Maggie@2814!"
+}
+
+
+
+
+#####
+#Products API
+#To get all products
+GET http://localhost:3000/product/34beecb9-4542-4c85-963e-f64f4484c18c
+
+####
+
+GET http://localhost:3000/product/1
+token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJTdWIiOiJmZTM1YTZmYi02N2U2LTRmZGYtYjZhNS0wNDFhY2FmZDkyYmQiLCJOYW1lIjoiSm9obiIsImlhdCI6MTcxODE3ODkzOCwiZXhwIjoxNzE4MTg2MTM4fQ.xpo_dlm3mhLKCl4POVQp40b5ye1y8KXYaQgw4RJzAlo
+
+###
+
+
+GET http://localhost:3000/product/
+####
+PATCH http://localhost:3000/product/
+Content-Type: application/json
+
+{
+ "Id": 3,
+ "Name":"laptop2", 
+ "Price":12400,
+  "CategoryId":"c450e18c-e802-47b0-993a-ef1dd99b1c64"
+
+}
+
+####
+DELETE  http://localhost:3000/product
+
+
+
+
+
+
+

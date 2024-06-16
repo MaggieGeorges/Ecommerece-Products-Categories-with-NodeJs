@@ -1,0 +1,10 @@
+USE Ecommerce;
+GO
+
+
+CREATE OR ALTER PROCEDURE getCategory
+AS
+BEGIN
+    SELECT * FROM Category;
+END
+GO
